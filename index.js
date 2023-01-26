@@ -1,6 +1,7 @@
-const express  = require('express')
+const dotenv = require('dotenv')
+const express = require('express');
 const app = express();
-
+require('./db/connection')
 app.get('/',(req,res)=>{
     res.send("Hello world from the server")
 });
